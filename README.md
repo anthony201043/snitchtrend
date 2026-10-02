@@ -31,7 +31,21 @@ Typos in categories and city names
 Unrealistic discounts and profit values
 
 # Key features
-Snitch Fashion Sales (Uncleaned) Dataset  Context This is a synthetic dataset representing sales transactions from Snitch, a fictional Indian clothing brand. The dataset simulates real-world retail sales data with uncleaned records, designed for learners and professionals to practice data cleaning, exploratory data analysis (EDA), and dashboard building using tools like Python, Power BI, or Exce
+Snitch Fashion Sales (Uncleaned) Dataset  Context This is a synthetic dataset representing sales transactions from Snitch, a fictional Indian clothing brand. The dataset simulates real-world retail sales data with uncleaned records, designed for learners and professionals to practice data cleaning, exploratory data analysis (EDA), and dashboard building using tools like Python, Power BI, or Excel
+
+``` PYTHON
+ from flask import Flask, render_template
+
+app = Flask(__name__)
+
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
 
 
